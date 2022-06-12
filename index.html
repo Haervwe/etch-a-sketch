@@ -9,33 +9,37 @@
     <title>Etch a Sketch</title>
 </head>
 <body>
-   <div class="container">
-       <div class="title">
+    <div class="container">
+        <div class="title">
             <h1>Etch A Sketch</h1>
             <p>Click an hover in the board to draw!</p>
-       </div>
-       <div class="game">
+        </div>
+        <div class="game">
             <div class="controls">
                 <p class="darker btn" > Darker</p>
                 <p class="brighter btn">Brighter</p>
                 <p class="random btn"> Random</p>
                 <p class="erase btn">Erase</p>
-                <p class="Reset btn">Reset</p>
+                <p class="reset btn">Reset</p>
             </div>
             <div class="gameBoard">
                 <div class="board"></div>
-           </div>
-           <div class="controls">
-               <p class="btn">Rows?</p>
-               <input class="btn" id="size" type="number" value="16">
-               <p class="btn selector">color?</p>
-               <input class="btn "type="color">
-           </div>
-       </div>
-       <div class="footer"> 
-           <p>Crafted by Haervwe.</p>
-       </div>
-   </div>
-   <script src="./script.js"></script> 
+            </div>
+            <div class="controls">
+                <div class="ctrl btn" >
+                    <p>Rows?</p>
+                    <input  id="size" type="number" value="16">
+                </div>
+                <div class="ctrl btn">
+                    <p>color?</p>
+                    <input id="clr" type="color">
+                </div>
+            </div>
+        </div>
+        <div class="footer"> 
+            <p>Crafted by Haervwe.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script> 
 </body>
 </html>

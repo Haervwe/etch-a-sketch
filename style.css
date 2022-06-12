@@ -77,6 +77,31 @@ body {
     
 }
 
+.ctrl.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    gap: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.ctrl.btn p{
+    margin: 0px 0px 0px 0px;
+}
+
+#size {
+    width: 80px;
+    height: 35px;
+    color: black;
+}
+
+#clr {
+    width: 80px;
+    height: 35px;
+}
+
 .gameBoard {
     display: flex;
     justify-content: center;
