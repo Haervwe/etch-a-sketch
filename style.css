@@ -2,6 +2,8 @@
     box-sizing: border-box;
     user-select: none;
     -webkit-user-drag: none;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 1px 1px 4px black;
 }
 
 input{
