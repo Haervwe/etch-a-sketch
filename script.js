@@ -104,6 +104,15 @@ function paint (e) {
         red = parseInt(red);
         green = parseInt(green);
         blue = parseInt(blue);
+        if(red <= 6){
+            red = "10";
+        }
+        if (green <= 6){
+            green = "10";
+        }
+        if (blue <= 6){
+            blue = "10";
+        }
         if (red>255){
             red = "255";
         }
