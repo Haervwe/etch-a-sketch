@@ -102,6 +102,7 @@ body {
     border-radius: 15px;
     flex: 1 1 0;
     padding: 4px;
+    gap:0px;
 }
 
 .btn , .controlTitle {

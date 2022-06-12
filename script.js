@@ -1,9 +1,14 @@
+let color = "#ffffff";
+
+
 const board = document.querySelector(".board");
 const size = document.querySelector(".board").clientHeight;
 const sizeInput = document.querySelector("#size");
 const clrInput = document.querySelector("#clr");
-let color = "#ffffff";
 
+let mouseDown = "false";
+document.body.onmousedown = () => (mouseDown="true");
+document.body.onmouseup = () => (mouseDown="false");
 
 // funtion that bills the board with divs //
 
@@ -23,19 +28,18 @@ function fillBoard(n){
 
 // function to color with a color //
 
-function paint (div,a,b,c) {
-    
+function paint (e) { 
+    if (e.type === "mouseover" && mouseDown == "false")return
+    else{
+        console.log(mouseDown);
+        e.target.style.backgroundColor = "black";
+        board.style.backgroundColor ="white";
+    }
 }
 
 //function to add drawing functionality //
 
-board.addEventListener("hover", function (){
-    const newDiv = document.querySelectorAll(".square");
-    newDiv.foreach (square =>{
-        square.addEventListener("hover",function (){square.style.backgroundColor = "black";});
-    });
-    
-});
+board.addEventListener("mouseover", paint);
 
 
 
